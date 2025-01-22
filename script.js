@@ -8,7 +8,7 @@
 // Model URL from Teachable Machine
 //**************************************************
 //* as before, paste your lnk below
-let URL = "https://teachablemachine.withgoogle.com/models/5EW697r3d/";
+let URL = "https://teachablemachine.withgoogle.com/models/Lm2Rp6oGR/";
 
 
 

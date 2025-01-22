@@ -123,8 +123,16 @@ function checkPose(prediction, video) {
                 }
                 break;
             case '2':
-                if (time >= 7 && time <= 12 && !poseState.triggered) {
-                    triggerExplosion(poseState);
+               if ((time >= 1 && time <= 5 && !poseState.firstWindowTriggered) ||
+                    (time >= 5 && time <= 12 && !poseState.secondWindowTriggered)) {
+                    if (time <= 5) {
+                        poseState.firstWindowTriggered = true;
+                    } else {
+                        poseState.secondWindowTriggered = true;
+                    }
+                    explosionActive = true;
+                    playExplosionSound();
+                    setTimeout(() => { explosionActive = false; }, 300);
                 }
                 break;
             case '3':

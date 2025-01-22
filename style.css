@@ -70,7 +70,7 @@ button {
   margin: 10px 0;
   cursor: pointer;
   background: #fcccf0;
-  color: pink;
+  color: white;
   border: none;
   border-radius: 4px;
   display: block;
@@ -78,7 +78,7 @@ button {
 
 canvas {
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #d4acfc;
   width: 600px;
   height: 600px;
   display: block;
